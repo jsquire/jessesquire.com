@@ -1,0 +1,26 @@
+--- 
+--- 
+
+/* Hamburger Menu Toggle (https://jonsuh.com/hamburgers) */
+
+@import "hamburgers";
+
+.hamburger,
+.hamburger:active,
+.hamburger:visited,
+.hamburger:focus
+{
+    top     : 5px;
+    left    : 0px;    
+    border  : none;
+    padding : 10px;
+}
+
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after
+{
+    color            : #dedede;
+    background-color : #dedede;
+}
+

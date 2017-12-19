@@ -13,22 +13,50 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+# Site Settings
+title: "Jesse Squire"
+email: jesse.squire@gmail.com
+description: The technical blog and personal site of Jesse Squire.
+baseurl: ""
+url: "https://www.jessesquire.com"
+title_description: "Jesse is a software engineer at Microsoft in the Commercial Software Engineering group.  He previously worked on Halo at 343 Industries.  All views expressed are his own, especially those regarding the divinity of Hello Kitty."
+title_image: "https://0.gravatar.com/avatar/fbe5310c4d5a64a88aeeb83676b28a81?s=500&d=mm"
+github_repository: https://github.com/jacobtomlinson/carte-noire
+post_limit: 10
+
+# External Resource Settings
+addthis_id: 
+google_analytics: ""
+disqus_account: 
+
+# Social usernames/URLs
+twitter_username: jesse_squire
+github_username: jsquire
+instagram_username: 
+reddit_username: 
+linkedin_link: https://www.linkedin.com/in/jessesquire
+stackoverflow_link: https://stackoverflow.com/users/159548/jesse-squire?tab=profile
+google_plus_link: 
+xing_link:
+facebook_link:
+
+# Footer
+footer_left: "Carte Noire theme by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
-theme: minima
+permalink: pretty
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

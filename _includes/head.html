@@ -24,10 +24,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">  
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/mstile-144x144.png" />
+  <meta name="msapplication-TileColor" content="#21211e">
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/mstile-310x310.png" />
   <meta name="msapplication-config" content="{{ site.baseurl }}/favicons/browserconfig.xml" />
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#21211e">
   
   {% if twitter_username %}
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -50,17 +50,16 @@
   <![endif]-->
   
   {% comment %} Favicons generated at http://realfavicongenerator.net/ {% endcomment %}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicons/apple-touch-icon-180x180.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicons/android-chrome-512x512.png" sizes="512x512" />
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicons/android-chrome-192x192.png" sizes="192x192" />
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicons/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicons/favicon-16x16.png" sizes="16x16" />
-  <link rel="manifest" href="favicons/manifest.json">
-  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#64a1d2">
-  <link rel="shortcut icon" href="favicons/favicon.ico">
-  <meta name="msapplication-config" content="favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="manifest" href="{{ site.baseurl }}/favicons/manifest.json?v=2" />
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicons/favicon.ico?v=2" />
+  <link rel="manifest" href="{{ site.baseurl }}/favicons/manifest.json">
+  <link rel="mask-icon" href="{{ site.baseurl }}/favicons/safari-pinned-tab.svg" color="#21211e">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicons/favicon.ico">  
+  <link rel="manifest" href="{{ site.baseurl }}/favicons/manifest.json" />
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicons/favicon.ico" />
 
   {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
   <link rel="canonical" href="{{ canonical }}">

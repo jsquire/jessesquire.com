@@ -40,6 +40,7 @@ $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
 $sidebar-width: 230px;
+$sidebar-resident-min: 1100px;
 
 /* Globals */
 
@@ -61,7 +62,9 @@ body
 }
 
 a,
-a:active
+a:active,
+a:visited,
+a:link
 {
     color          : $light-blue;
     text-decoration: none;
@@ -70,7 +73,7 @@ a:active
 a:hover
 {
     color          : $dark-blue;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 ul
@@ -400,18 +403,6 @@ ul
                 }
 
             }
-        }
-
-        a,
-        a:active
-        {
-            color      : $white;
-            white-space: nowrap;
-        }
-
-        a:hover
-        {
-            color: $light-blue;
         }
     }
 
@@ -845,10 +836,6 @@ ul
             }
 
         }
-
-        .comments
-        {}
-
     }
 }
 
@@ -963,35 +950,30 @@ ul
 
 .footer
 {
-    width      : 100%;
-    margin-left: 0;
+    font-size    : 0.8em;
+    position     : relative;
+    bottom       : 0;
+    width        : 100%;
+    padding-left : $sidebar-width;
 
     .fa-heart
     {
         color: $red;
-    }
-    @media (min-width: $screen-sm-min)
-    {
-        width      : 90%;
-        margin-left: 5%;
-    }
-    @media (min-width: $screen-md-min)
-    {
-        width      : 80%;
-        margin-left: 10%;
-    }
-    @media (min-width: $screen-lg-min)
-    {
-        width      : 70%;
-        margin-left: 15%;
-    }
+    } 
 
     div
     {
+        display      : inline-block;
         color        : $light-medium;
         text-align   : center;
-        margin-top   : 20px;
-        margin-bottom: 20px;
+        margin-top   : 5px;
+        margin-bottom: 5px;        
+        width        : 100%
+    }
+
+    @media (max-width: $sidebar-resident-min)
+    {
+        padding-left : 0;
     }
 }
 
@@ -1075,13 +1057,25 @@ td
     margin-left : 44px;
 }
 
-@media all and (min-width: $screen-sm-min)
+@media all and (min-width: $sidebar-resident-min)
 {
-    .page-content,
-    .footer
+    html,
+    html.mm-opened,
+    html.mm-opened body
+    {
+        overflow-y : auto;
+    }
+
+    .page-content
     {
         margin-left : -$sidebar-width;
         width       : auto;
+    }
+    
+    .footer
+    {
+        margin-left : -$sidebar-width;
+        
     }
 
     #mm-blocker

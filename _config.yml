@@ -15,14 +15,18 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site Settings
-title: "Jesse Squire"
+title: Jesse Squire
+short_title: Jesse Squire's Blog
 email: jesse.squire@gmail.com
 description: The technical blog and personal site of Jesse Squire.
 baseurl: ""
 url: "https://www.jessesquire.com"
-title_description: "Jesse is a software engineer at Microsoft in the Commercial Software Engineering group.  He previously worked on Halo at 343 Industries.  All views expressed are his own, especially those regarding the divinity of Hello Kitty."
-title_image: "https://0.gravatar.com/avatar/fbe5310c4d5a64a88aeeb83676b28a81?s=500&d=mm"
-github_repository: https://github.com/jacobtomlinson/carte-noire
+title_description: >-
+    <p>Jesse is a software engineer at Microsoft in the Commercial Software Engineering group.  He previously worked on Halo at 343 Industries.</p>
+    <p>This is the place where Jesse shares his thoughts on technology, code, software engineering and, very occasionally, a personal thought or two.</p>
+    <p>All views expressed are his own &ndash; especially those regarding the divinity of Hello Kitty.</p>
+title_image: https://0.gravatar.com/avatar/fbe5310c4d5a64a88aeeb83676b28a81?s=500&d=mm
+github_repository: https://github.com/jsquire/blog-site
 post_limit: 10
 
 # External Resource Settings

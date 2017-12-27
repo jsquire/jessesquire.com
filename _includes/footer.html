@@ -1,8 +1,8 @@
 <div class="footer clearfix">
-  <div class="col-md-6">
+  <div class="left">
     {{ site.footer_left }}
   </div>
-  <div class="col-md-6">
+  <div class="right">
     {{ site.footer_right }}
   </div>
 </div>
@@ -13,7 +13,7 @@
 <script src="{{ site.baseurl }}/scripts/theme.js"></script>
 
 
-<script type="text/javascript">
+<script>
     var adjustArticleFontSizes = {% if page.make-smaller-titles %} true {% else %} false {% endif %};
        
     $(function() {

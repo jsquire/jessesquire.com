@@ -1,9 +1,19 @@
 --- 
 --- 
 
-/* Hamburger Menu Toggle (https://jonsuh.com/hamburgers) */
+/* Imports */
 
 @import "hamburgers";
+
+/* Common Variable Definitions */
+
+
+
+/* General Site Styles */
+
+
+
+/* Hamburger Menu Toggle (https://jonsuh.com/hamburgers) */
 
 .hamburger,
 .hamburger:active,
@@ -24,3 +34,51 @@
     background-color : #dedede;
 }
 
+/* General */
+
+/* About Page */
+
+.about
+{
+    margin-bottom : 6px;
+
+    p
+    {
+        margin-bottom: 20px;
+    }
+
+    .top-border
+    {
+        background  : #3CA2A2;
+        margin-top  : -20px;
+        margin-left : 45px;
+        height      : 5px;
+        width       : 100%;
+    }
+
+    .gravatar
+    {
+        text-align : left;
+    }
+
+    .content
+    {
+        text-align : justify;
+    }
+
+    @media (max-width: 991px)
+    {
+        .top-border
+        {
+            width: 97%;
+        }
+    }
+
+    @media (max-width: 534px)
+    {        
+        .gravatar
+        {
+            margin-top: -20px;
+        }
+    }
+}

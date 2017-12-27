@@ -1,18 +1,23 @@
 ---
 layout: page
-title: About
+contentIdentifier: about
+title: About Jesse
 permalink: /about/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<div class="container-fluid about">
+  <div class="top-border">&nbsp;</div>
+  <div class="gravatar">
+    <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+  </div>
+  <div class="content" markdown="block">
+My love for technology began at age 6 when I wrote my first lines of BASIC code on a TI-99/4A. From the moment that I saw my name printed across the screen, I knew what I wanted to be  when I grew up. Nearing twenty years of professional experience later, I still hold onto that child-like sense of wonder and feel incredibly fortunate that I've been able to build a  career around something about which I'm passionate and would be doing as a hobby regardless.  
+ 
+Currently, I serve as a Senior Software Engineer at Microsoft in the Commercial Software Engineering group.  In this role, I partner with Microsoft customers to help them achieve success  with Microsoft platforms, services, and technologies such as Azure, Xbox, HoloLens, and Windows.  Our goal is to meet our partners where they are, embracing a diverse set of tools and  technical stacks to solve real-world business problems.  As these problems can often be things that others experience or are interested in, another core goal of the CSE group goals is  circulate our learnings so that it benefits others.  This site is the primary vehicle where I'll be writing about things that I found to be tricky and/or interesting.
+ 
+Previously, I worked at 343 Industries on the Halo Services team, helping to and deliver service offerings that support the ecosystem of Halo games and the larger Halo universe.  My  contribution included services for Halo 5: Guardians, Halo 5:Forge, Halo: The Master Chief Collection, Halo: Spartan Strike, Halo Channel, as well as other Halo properties.  My love of  technology began with a love of games; I wrote my first lines of code and played my first video game at roughly the same time.  Having the opportunity to  make games professionally,  especially for a series as beloved as Halo, was the fulfillment of a lifelong dream.  
+ 
+In my past, I have held leadership and development-centric roles in companies of various size, and as a consultant, across different verticles.   I have been responsible for duties such  as managing geographically distributed development teams, leading the technical and architectural direction, ownership of hiring for teams, establishment of standards, mentorship, and  the delivery of software products.  Should you be interested in more details about my background, feel free to view my [LinkedIn](https://www.linkedin.com/in/jessesquire) profile.
+ 
+Feel free to reach out via [Twitter](https://www.twitter.com/Jesse_Squire) or [LinkedIn](https://www.linkedin.com/in/jessesquire), my DMs are open.
+  </div>
+</div>

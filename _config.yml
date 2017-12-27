@@ -60,6 +60,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-gist
+  - jekyll-sitemap
   - jemoji
   - hamburgers
 

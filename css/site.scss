@@ -5,14 +5,6 @@
 
 @import "hamburgers";
 
-/* Common Variable Definitions */
-
-
-
-/* General Site Styles */
-
-
-
 /* Hamburger Menu Toggle (https://jonsuh.com/hamburgers) */
 
 .hamburger,
@@ -34,7 +26,15 @@
     background-color : #dedede;
 }
 
-/* General */
+/* Code Formatting */
+
+.single .article .content div.highlighter-rouge pre, 
+.single .article .content figure.highlight pre,
+.highlight pre 
+{
+  color            : #e0e0e0;
+  background-color : #181818;
+}
 
 /* About Page */
 

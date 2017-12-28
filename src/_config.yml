@@ -67,6 +67,12 @@ kramdown:
       line_numbers: false
       start_line: 1
 
+asset_pipeline:
+  bundle: true
+  compress: true
+  output_path: assets
+  gzip: true
+
 plugins:
   - jekyll-feed
   - jekyll-gist

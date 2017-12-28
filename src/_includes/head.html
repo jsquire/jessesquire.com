@@ -35,12 +35,17 @@
   <meta name="twitter:creator" content="@{{ twitter_username }}">
   {% endif %}
   
-  <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/jquery.mmenu.all.css" />  
-  <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/theme.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/pygment-jesse.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/site.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700" />    
+  <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Montserrat" />    
+  <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" />  
+  <link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />        
+  {% css_asset_tag site %}
+  - /_assets/styles/jquery.mmenu.all.css
+  - /_assets/styles/theme.css.scss
+  - /_assets/styles/pygment-jesse.css
+  - /_assets/styles/site.css.scss
+  {% endcss_asset_tag %}
 
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>

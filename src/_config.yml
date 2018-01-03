@@ -49,6 +49,25 @@ facebook_link:
 footer_left: "Carte Noire theme by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
+# SEO Settings (specific to jekyll-seo-tag)
+# It also makes use of the following site-settings: title, description, url, 
+author: Jesse Squire
+author:
+  twitter: jesse_squire
+logo: https://0.gravatar.com/avatar/fbe5310c4d5a64a88aeeb83676b28a81?s=500&d=mm
+twitter:
+  username: jesse_squire
+social:
+  name: Jesse Squire
+  links:
+    - https://twitter.com/Jesse_Squire
+    - https://www.linkedin.com/in/jessesquire
+    - https://github.com/jsquire
+    - https://stackoverflow.com/users/159548/jesse-squire?tab=profile
+
+# General Plugin Settings
+
+
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -75,8 +94,8 @@ asset_pipeline:
 
 plugins:
   - jekyll-feed
-  - jekyll-gist
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jemoji
   - hamburgers
 

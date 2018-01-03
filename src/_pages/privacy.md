@@ -4,7 +4,6 @@ contentIdentifier: privacy
 title: Privacy Policy
 permalink: /privacy.html
 ---
-<div class="content" markdown="block">
 This privacy notice discloses the privacy practices for ({{ site.url }}) and applies solely to information collected by this website. It will notify you of the following:
 
 * What information is collected through the site, how it is used, and with whom it may be shared.
@@ -38,4 +37,3 @@ This Privacy Policy may be updated from time to time. Thus, we advise you to rev
 Contact Us
 ------
 If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
-</div>

@@ -4,12 +4,11 @@ contentIdentifier: about
 title: About Jesse
 permalink: /about/
 ---
-<div class="container-fluid about">
+<div class="container-fluid {{ page.contentIdentifier }}" markdown="block">
   <hr class="top-border" />
   <div class="gravatar">
     <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
   </div>
-  <div class="content" markdown="block">
 My love for technology began at age 6 when I wrote my first lines of BASIC code on a TI-99/4A. From the moment that I saw my name printed across the screen, I knew what I wanted to be  when I grew up. Nearing twenty years of professional experience later, I still hold onto that child-like sense of wonder and feel incredibly fortunate that I've been able to build a  career around something about which I'm passionate and would be doing as a hobby regardless.  
  
 Currently, I serve as a Senior Software Engineer at Microsoft in the Commercial Software Engineering group.  I partner with Microsoft customers to help them achieve success with Microsoft platforms, services, and technologies such as Azure, Xbox, HoloLens, and Windows.  Our goal is to meet partners where they are, coding together to solve real-world business problems.  To do so, we embrace a diverse set of tools, languages, and technical environments.  As these problems can often be things that others experience or are interested in, another of our core goals to circulate our learnings so that they can benefit others.  This site is the primary vehicle where I'll be writing about things that I found to be tricky and/or interesting.
@@ -19,5 +18,4 @@ Previously, I worked at 343 Industries on the Halo Services team, helping to and
 In my past, I've served in various roles involving the architecture, development, delivery, and management of software products and the teams that deliver them.  I have been responsible for a diverse set of duties such as managing geographically distributed development teams, leading the technical direction of products and organizations, establishing a healthy and inclusive team culture, building technical standards, team and peer mentorship, and the delivery of software products.  Should you be interested in more details about my background, Please see my [LinkedIn](https://www.linkedin.com/in/jessesquire) profile.
  
 Feel free to reach out via [Twitter](https://www.twitter.com/Jesse_Squire) or [LinkedIn](https://www.linkedin.com/in/jessesquire), my DMs are open.
-  </div>
 </div>

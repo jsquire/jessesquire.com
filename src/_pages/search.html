@@ -1,5 +1,6 @@
 ---
 layout: default
+contentIdentifier: search-results
 permalink: /search.html
 ---
 
@@ -23,13 +24,27 @@ permalink: /search.html
 {% endjavascript_asset_tag %}
 
 <script>
+  var formatResult = function(property, value, template) {      
+      switch (property)
+      {
+          case 'date':
+              return ' on ' + new Date(value).toLocaleString();
+
+          case 'author':
+              if (value.length > 0) {
+                return 'by ' + value
+              }
+      }
+  };
+
   SimpleJekyllSearch.init({
     searchInput          : document.getElementById('search-input'),
     resultsContainer     : document.getElementById('results-container'),
-    dataSource           : '{{ site.baseurl }}/search.json',
-    searchResultTemplate : '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+    json                 : '{{ site.baseurl }}/search.json',
+    searchResultTemplate : '<li class="result-item"><a href="{url}" title="{title}">{title}</a><p class="result-meta">{author}{date}</p></li>',
     noResultsText        : 'No results found',
     limit                : 10,
     fuzzy                : true,
+    templateMiddleware   : formatResult
   })
 </script>

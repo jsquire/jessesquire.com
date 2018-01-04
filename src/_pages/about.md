@@ -1,5 +1,6 @@
 ---
 layout: page
+make-smaller-titles: true
 contentIdentifier: about
 title: About Jesse
 permalink: /about/

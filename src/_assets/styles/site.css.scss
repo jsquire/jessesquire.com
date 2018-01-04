@@ -10,6 +10,7 @@ $hamburger            : #dedede;
 $code-base            : #e0e0e0;
 $code-base-background : #181818;
 $content-border       : #3CA2A2;
+$post-list-title      : #e0e0e0;
 
 /* General Styles */
 
@@ -132,5 +133,28 @@ $content-border       : #3CA2A2;
     {
         font-size : inherit;
         margin    : inherit;
+    }
+}
+
+/* Post Listing Pages */
+
+.post-list
+{
+    .index .articles h2
+    {
+        color           : $post-list-title;
+        text-decoration : underline;
+    }
+}
+
+/* Search Page */
+
+.search-results
+{
+    .result-meta
+    {
+        font-size : 0.5em;
+        font-style: italic;
+        margin    : 0 0 0 5px;
     }
 }

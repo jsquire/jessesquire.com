@@ -4,6 +4,7 @@ layout: none
 [
   {% for post in site.posts %}
   {
+    "author"   : "{% if page.author and page.author != empty %}{{ page.author }}{% else %}{{ site.author_name }}{% endif %}",
     "title"    : "{{ post.title | escape }}",
     "category" : "{{ post.category }}",
     "tags"     : "{{ post.tags | join: ', ' }}",

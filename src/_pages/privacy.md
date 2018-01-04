@@ -1,5 +1,6 @@
 ---
 layout: page
+make-smaller-titles: true
 contentIdentifier: privacy
 title: Privacy Policy
 permalink: /privacy.html

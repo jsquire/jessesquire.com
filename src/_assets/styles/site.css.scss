@@ -185,8 +185,32 @@ $post-list-title      : #e0e0e0;
         font-size : 14pt;
     }
 
+    .article .content .share
+    {
+        text-align : left;
+        
+        
+    }
+
+    .article .content .share h3
+    {
+          font-size : 14pt;
+    }
+
     .a2a_dd
     {
         margin-left : 10px;
+    }
+
+    .comment-policy-prompt
+    {
+        margin-top : 20px;
+        font-size  : 10pt;
+        font-style : italic;
+
+        p
+        {
+            margin-bottom : unset;
+        }
     }
 }

@@ -32,7 +32,7 @@ post_limit: 10
 
 # External Resource Settings
 display_sharing: true
-google_analytics: ""
+google_analytics: UA-112031291-1
 disqus_account: jesse-squire
 
 # Social usernames/URLs

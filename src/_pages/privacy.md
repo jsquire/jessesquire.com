@@ -1,11 +1,11 @@
 ---
 layout: page
 make-smaller-titles: true
-contentIdentifier: privacy
+contentIdentifier: site-page
 title: Privacy Policy
 permalink: /privacy.html
 ---
-This privacy notice discloses the privacy practices for ({{ site.url }}) and applies solely to information collected by this website. It will notify you of the following:
+This privacy notice discloses the privacy practices for {{ site.url }} and applies solely to information collected by this website. It will notify you of the following:
 
 * What information is collected through the site, how it is used, and with whom it may be shared.
 * What choices are available to you regarding the use of your data.

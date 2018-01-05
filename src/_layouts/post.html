@@ -1,5 +1,8 @@
 ---
 layout: default
+make-smaller-titles: true
+contentIdentifier: post
+comments: true
 ---
 
 {% if page.minutes %}
@@ -9,7 +12,7 @@ layout: default
   {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
 {% endif %}
 
-<div class="container-fluid single">
+<div class="container-fluid single post">
   <div class="row">
 
     <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
@@ -84,10 +87,24 @@ layout: default
           {% endif %}
         {% endif %}
 
-        {% if site.addthis_id %}
-        <div class="share">
-          <!-- Go to www.addthis.com/dashboard to customize your tools -->
-          <div class="addthis_sharing_toolbox"></div>
+        {% if site.display_sharing %}
+        <div class="share">        
+          {% comment %} AddToAny buttons (https://www.addtoany.com/buttons/for/website) {% endcomment %}  
+           <div class="a2a_kit a2a_kit_size_32 a2a_default_style">              
+              <a class="a2a_button_twitter" href="#"></a>
+              <a class="a2a_button_facebook" href="#"></a>              
+              <a class="a2a_button_linkedin" href="#"></a>
+              <a class="a2a_button_google_plus" href="#"></a>
+              <a class="a2a_button_email" href="#"></a>
+              <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+           </div>
+          <script>
+            var a2a_config = a2a_config || {};
+                a2a_config.linkname = "{{ page.title }}";
+                a2a_config.linkurl = "{{ site.url }}{{ page.url }}";
+                a2a_config.num_services = 10;
+          </script>
+          <script async src="https://static.addtoany.com/menu/page.js"></script>
         </div>
         {% endif %}
 

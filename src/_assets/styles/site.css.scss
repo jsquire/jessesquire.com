@@ -106,12 +106,18 @@ $post-list-title      : #e0e0e0;
     }
 }
 
-/* Privacy Page */
+/* General Page */
 
-.privacy
+.site-page
 {
     margin-bottom : 6px;   
     font-size     : 14px;
+
+    h2
+    {
+        margin-top    : 20px;
+        margin-bottom : 20px;
+    }
 
     .content
     {
@@ -133,6 +139,17 @@ $post-list-title      : #e0e0e0;
     {
         font-size : inherit;
         margin    : inherit;
+    }
+
+    .index .articles ul li:last-of-type
+    {
+        margin-bottom : 1.1em;
+    }
+
+    .index .articles h2
+    {
+        margin-top    : 20px;
+        margin-bottom : 20px;
     }
 }
 
@@ -156,5 +173,20 @@ $post-list-title      : #e0e0e0;
         font-size : 0.5em;
         font-style: italic;
         margin    : 0 0 0 5px;
+    }
+}
+
+/* Post Pages */
+
+.post
+{
+    .article .content
+    {
+        font-size : 14pt;
+    }
+
+    .a2a_dd
+    {
+        margin-left : 10px;
     }
 }

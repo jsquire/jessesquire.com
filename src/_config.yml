@@ -31,9 +31,9 @@ github_repository: https://github.com/jsquire/blog-site
 post_limit: 10
 
 # External Resource Settings
-addthis_id: 
+display_sharing: true
 google_analytics: ""
-disqus_account: 
+disqus_account: jesse-squire
 
 # Social usernames/URLs
 twitter_username: jesse_squire

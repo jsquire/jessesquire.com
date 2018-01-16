@@ -2,7 +2,19 @@
 
 ### Overview ###
 
-Included in this repository are the assets and content used with Jekyll to generate the website that hosts Jesse's blog, and the accompanying blog posts.  The 
+Included in this repository are the assets and content used with Jekyll to generate the Jesse's personal website and the associated content.   
+
+### Structure ###
+
+* **root**
+  <br />_The root contains the overall repository configuration files, license, and general structure._
+   
+* **build**
+  <br />_The container for scripts and utilities related to building the site and local development._
+  
+* **src**
+  <br />_The container for the source used to generate the site as well as the article content hosted on it.  The structures herein follow the conventions for Jekyll assets._
+  
 
 ### Licensing ###
 The artifacts in this repository are offered under the MIT license, as described in the accompanying [license](./LICENSE "license") file.  Feel free to use the code in your own projects as you see fit.  Should they prove helpful or inspire you to iterate on them in creative ways, I find that to be a huge compliment.  We all build upon the work of those who have come before us.  

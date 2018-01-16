@@ -66,9 +66,6 @@ social:
     - https://github.com/jsquire
     - https://stackoverflow.com/users/159548/jesse-squire?tab=profile
 
-# General Plugin Settings
-
-
 # Build settings
 markdown: kramdown
 permalink: pretty

@@ -14,6 +14,14 @@ $post-list-title      : #e0e0e0;
 
 /* General Styles */
 
+.post
+{
+    li
+    {
+        margin-bottom: 0.75em;
+    }
+}
+
 .img-circle
 {
     border     : solid 1px $image-border;

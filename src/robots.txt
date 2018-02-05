@@ -8,3 +8,4 @@ Disallow: /drafts/
 Disallow: /privacy.html
 Disallow: /404.html
 Disallow: /search.json
+Disallow: /google263bb7497474800c.html

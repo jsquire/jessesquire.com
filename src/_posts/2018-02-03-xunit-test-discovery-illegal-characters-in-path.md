@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visual Studio Test Discovery Error Due to Illegal Characters in the Path"
-date:   2017-02-03 12:28:12 -0500
+date:   2018-02-03 12:28:12 -0500
 category: articles
 tags: 
   - xunit 

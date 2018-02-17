@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visual Studio Fails to Discover Tests"
-date:   2017-02-04 02:40:10 -0500
+date:   2018-02-04 02:40:10 -0500
 category: articles
 tags: 
   - xunit 

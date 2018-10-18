@@ -64,7 +64,7 @@ GEM
     public_suffix (3.0.1)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
-      ffi (~> 1.9.24, < 2)
+      ffi (>= 0.5.0, < 2)
     rouge (2.2.1)
     safe_yaml (1.0.4)
     sass (3.5.3)
@@ -83,7 +83,7 @@ PLATFORMS
 
 DEPENDENCIES
   hamburgers
-  jekyll (~> 3.6.2)
+  jekyll (~> 3.6.3)
   jekyll-feed (~> 0.6)
   jekyll-seo-tag
   jekyll-sitemap
@@ -94,4 +94,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   1.16.0
+   1.16.6

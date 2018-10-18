@@ -11,7 +11,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     execjs (2.7.0)
-    ffi (1.9.18)
+    ffi (1.9.25)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     hamburgers (0.9.1)

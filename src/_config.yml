@@ -23,7 +23,7 @@ description: The technical blog and personal site of Jesse Squire.
 baseurl: ""
 url: "https://www.jessesquire.com"
 title_description: >-
-    <p>Jesse is a software engineer at Microsoft in the Commercial Software Engineering group.  He previously worked on Halo at 343 Industries.</p>
+    <p>Jesse is a software engineer on the Azure Developer Platform team at Microsoft. He used to work on Halo at 343 Industries.</p>
     <p>This is the place where Jesse shares his thoughts on technology, code, software engineering and, occasionally, a personal thought or two.</p>
     <p>All views expressed are his own &ndash; especially those regarding the divinity of Hello Kitty.</p>
 title_image: https://0.gravatar.com/avatar/fbe5310c4d5a64a88aeeb83676b28a81?s=500&d=mm
@@ -38,11 +38,11 @@ disqus_account: jesse-squire
 # Social usernames/URLs
 twitter_username: jesse_squire
 github_username: jsquire
-instagram_username: 
-reddit_username: 
+instagram_username:
+reddit_username:
 linkedin_link: https://www.linkedin.com/in/jessesquire
 stackoverflow_link: https://stackoverflow.com/users/159548/jesse-squire?tab=profile
-google_plus_link: 
+google_plus_link:
 xing_link:
 facebook_link:
 
@@ -51,7 +51,7 @@ footer_left: "Carte Noire theme by <a href=\"https://twitter.com/_JacobTomlinson
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # SEO Settings (specific to jekyll-seo-tag)
-# It also makes use of the following site-settings: title, description, url, 
+# It also makes use of the following site-settings: title, description, url,
 author: Jesse Squire
 author:
   twitter: jesse_squire
@@ -73,11 +73,11 @@ permalink: pretty
 kramdown:
   input: GFM
   hard_wrap: false
-  syntax_highlighter: rouge  
+  syntax_highlighter: rouge
 
   # Rouge Options › https://github.com/jneen/rouge#full-options
-  syntax_highlighter_opts:      
-    css_class: 'highlight'    
+  syntax_highlighter_opts:
+    css_class: 'highlight'
     span:
       line_numbers: false
     block:
@@ -97,7 +97,7 @@ plugins:
   - jemoji
   - hamburgers
 
-include: 
+include:
   - _pages
 
 # Exclude from processing.

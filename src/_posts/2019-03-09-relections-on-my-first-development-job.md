@@ -8,10 +8,7 @@ tags:
   - retrospective
   - humor
 ---
-<style>
-  em { padding-left: 0.6em; padding-right: 0.4em; }
-  ul { margin-top: -20px; }
-</style>
+<style>em { padding-left: 0.6em; padding-right: 0.4em; }</style>
 December of 2018 marked the 20th anniversary for my being given money to tell computers what to do.  As I'm currently in the process of adjusting to a new role, I thought that it may be amusing to reminisce back on the first paying job as a developer that I had.
 
 # Setting the Stage
@@ -36,18 +33,19 @@ The software didn't change very much from year-to-year, typically.  A few bug fi
 
 The owner of the company, Mike, was the person that "interviewed" me.  He and a partner had started the company and wrote the original few years of the management software before Mike stepped away from hands-on development and hired others to do the work.  By the time I joined, Mike had been away from programming for a solid 10+ years, but his shadow loomed large.  I learned very quickly during my first few weeks that Mike still dictated many of the practices for development and that my initial impression of him being a bit odd was on point.  He had some interesting rules that we had to follow:
 
+{:.with-paragraph}
 - Development will always be done in a version of FoxPro that is at least 1 major version behind the current release. **_Why?_**  Mike had his environment crash once after installing the most recent version and didn't want to deal with "unstable software" that could cost him money.
-- The names of all files will begin with a "w".**_Why?_**  Because Mike likes "w"s.  _(As you'd imagine, this means that out of the mass of files in the root directory, the majority of them were clustered together visually.)_
+- The names of all files will begin with a "w".**_Why?_**  Because Mike likes "w"s.
 - Files were to be named in lowercase without underscores, dashes, or spaces in them and were not to exceed 8 characters, including the leading "w". **_Why?_**   Because Mike felt that Windows was a fad and required that DOS limitations were adhered to.
-- All variable names were to begin with "M".**_Why?_**   To denote that it was a "memory variable."  _(Nobody could ever explain to my what other type of variable we were trying to distinguish from.  There was no such thing as a "file variable," for instance.  Everything was just a standard memory pointer.)_
-- Variable names were to be in UPPERCASE only, must contain only letters and digits, and may not exceed 8 characters, including the leading "M." **_Why?_**   Because FoxPro 2 wasn't able to deal with longer names or special characters and Mike required that we be compatible with FoxPro 2.0 (DOS) in case we ever had to rollback.  This was 1998; FoxPro 2.0 was 7 years old ran on a different platform than our product was sold on.  _(You can imagine how readable those variable names were.)_
+- All variable names were to begin with "M".**_Why?_**   To denote that it was a "memory variable."  Nobody was explain to me what other type of variable we were trying to distinguish from.  There was no such thing as a "file variable," for instance.  Everything was just a standard memory pointer.
+- Variable names were to be in UPPERCASE only, must contain only letters and digits, and may not exceed 8 characters, including the leading "M." **_Why?_**   Because FoxPro 2.0 wasn't able to deal with longer names or special characters and Mike required that we be compatible with it in case we ever had to rollback.  For the record, FoxPro 2.0 was 7 years older than our version and ran on a different operating system than our product was sold on.
 - We were not allowed to use arrays.**_Why?_**   Mike "didn't understand" arrays and, thus, didn't like them.
 - We were not allowed to use SQL.**_Why?_**  Mike "didn't understand" SQL.  Instead, we were to open each table file that we needed, programmatically set a join between them in memory, and then linearly scan them and copy over the information that we were trying to retrieve.
 
-I suspect that there were more quirks, but those are the ones that I can still recall.  My final memory is that, after arguing that using an array was necessary to implement whatever first task I was assigned, I was banished to being a cable pull assistant for running networks for the next two weeks as "a time to reflect on the importance of following standards."
+I suspect that there were more quirks, but those are the ones that I can still recall.  My final memory is that, after arguing that using an array was necessary to implement whatever first task I was assigned, I was banished to being a networking cable pull assistant for the next two weeks as "a time to reflect on the importance of following standards."
 
 # Well, That was Fast
 
-Shortly into my tenure, one of my college professors approached me with an opportunity that he had been kind enough to recommend me for.  I was offered double what I was making to take a role working on technology that wasn't in danger of being obsolete, Visual Basic - which was quite a hot technology at the time.
+Shortly into my tenure, one of my college professors approached me with an opportunity that he had been kind enough to recommend me for.  I was offered double what I was making to take a role working on technology that wasn't in danger of being obsolete, Visual Basic - quite a hot technology at the time.
 
 Thus ended my time with Mike's company.  It may have only been 3 months, but it left quite an impression.

@@ -952,7 +952,7 @@ ul
     .fa-heart
     {
         color: $red;
-    } 
+    }
 
     div
     {
@@ -960,7 +960,7 @@ ul
         color        : $light-medium;
         text-align   : center;
         margin-top   : 5px;
-        margin-bottom: 5px;        
+        margin-bottom: 5px;
         width        : 100%
     }
 
@@ -1036,6 +1036,14 @@ td
     border : 1px solid $dark-blue;
 }
 
+ul.with-paragraph
+{
+    @media (min-width: $screen-sm-min)
+    {
+        margin-top: -20px;
+    }
+}
+
 /* Side Menu Overrides: Convert to an always visible sidebar when space allows */
 
 #siteMenu
@@ -1064,11 +1072,11 @@ td
         margin-left : -$sidebar-width;
         width       : auto;
     }
-    
+
     .footer
     {
         margin-left : -$sidebar-width;
-        
+
     }
 
     #mm-blocker
@@ -1078,7 +1086,7 @@ td
         left    : -50px;
         height  : 1px;
         width   : 1px;
-        z-index : -1000;        
+        z-index : -1000;
     };
 
     #siteMenu
@@ -1098,38 +1106,38 @@ td
         display: none !important;
     }
 
-    .mm-menu 
+    .mm-menu
     {
-        width: $sidebar-width; 
+        width: $sidebar-width;
     }
 
     html.mm-opening .mm-page,
     html.mm-opening .mm-fixed-top,
-    html.mm-opening .mm-fixed-bottom 
+    html.mm-opening .mm-fixed-bottom
     {
-        left: $sidebar-width; 
+        left: $sidebar-width;
     }
 
-    .mm-menu.mm-right 
+    .mm-menu.mm-right
     {
-        width: $sidebar-width; 
+        width: $sidebar-width;
     }
 
     html.mm-right.mm-opening .mm-page,
     html.mm-right.mm-opening .mm-fixed-top,
-    html.mm-right.mm-opening .mm-fixed-bottom 
+    html.mm-right.mm-opening .mm-fixed-bottom
     {
-        right: $sidebar-width; 
-    } 
-
-    .mm-menu.mm-front, 
-    .mm-menu.mm-next 
-    {
-        left: -$sidebar-width; 
+        right: $sidebar-width;
     }
 
-    .mm-menu.mm-right.mm-front, 
-    .mm-menu.mm-right.mm-next 
+    .mm-menu.mm-front,
+    .mm-menu.mm-next
+    {
+        left: -$sidebar-width;
+    }
+
+    .mm-menu.mm-right.mm-front,
+    .mm-menu.mm-right.mm-next
     {
         right: -$sidebar-width;
     }
@@ -1137,7 +1145,7 @@ td
     .mm-page
     {
         position : relative;
-        left     : $sidebar-width; 
+        left     : $sidebar-width;
     }
 
     .mm-page,

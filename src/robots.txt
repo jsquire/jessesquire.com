@@ -5,7 +5,6 @@ Sitemap: {{ site.url }}/sitemap.xml
 
 User-agent: *
 Disallow: /drafts/
-Disallow: /privacy.html
 Disallow: /404.html
 Disallow: /search.json
 Disallow: /google263bb7497474800c.html

@@ -532,7 +532,8 @@ ul
         font-size: 28px;
     }
 
-    p
+    p,
+    .end-section
     {
         margin-bottom: 10px;
         @media (min-width: $screen-sm-min)
@@ -788,6 +789,12 @@ ul
                     vertical-align  : middle;
                 }
 
+                code.no-color
+                {
+                    background-color : transparent;
+                    color            : $white;
+                    padding          : 0;
+                }
             }
 
             .tags
@@ -1016,6 +1023,14 @@ ul
     }
 }
 
+.with-paragraph
+{
+    @media (min-width: $screen-sm-min)
+    {
+        margin-top: -20px;
+    }
+}
+
 table
 {
     margin         : 0 auto;
@@ -1036,13 +1051,6 @@ td
     border : 1px solid $dark-blue;
 }
 
-ul.with-paragraph
-{
-    @media (min-width: $screen-sm-min)
-    {
-        margin-top: -20px;
-    }
-}
 
 /* Side Menu Overrides: Convert to an always visible sidebar when space allows */
 

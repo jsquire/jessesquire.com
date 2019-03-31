@@ -35,6 +35,22 @@ $post-list-title      : #e0e0e0;
     font-size  : 8px;
 }
 
+.tiny-text
+{
+    font-size: 0.65em;
+}
+
+.no-wrap
+{
+    white-space: nowrap;
+}
+
+ol.single > li,
+ul.single > li
+{
+    margin-bottom: 0.01em;
+}
+
 /* Hamburger Menu Toggle (https://jonsuh.com/hamburgers) */
 
 .hamburger,
@@ -43,13 +59,13 @@ $post-list-title      : #e0e0e0;
 .hamburger:focus
 {
     top     : 5px;
-    left    : 0px;    
+    left    : 0px;
     border  : none;
     padding : 10px;
 }
 
-.hamburger-inner, 
-.hamburger-inner::before, 
+.hamburger-inner,
+.hamburger-inner::before,
 .hamburger-inner::after
 {
     color            : $hamburger;
@@ -58,9 +74,9 @@ $post-list-title      : #e0e0e0;
 
 /* Code Formatting */
 
-.single .article .content div.highlighter-rouge pre, 
+.single .article .content div.highlighter-rouge pre,
 .single .article .content figure.highlight pre,
-.highlight pre 
+.highlight pre
 {
   color            : $code-base;
   background-color : $code-base-background;
@@ -106,7 +122,7 @@ $post-list-title      : #e0e0e0;
     }
 
     @media (max-width: 534px)
-    {        
+    {
         .gravatar
         {
             margin-top: -45px;
@@ -118,7 +134,7 @@ $post-list-title      : #e0e0e0;
 
 .site-page
 {
-    margin-bottom : 6px;   
+    margin-bottom : 6px;
     font-size     : 14px;
 
     h2
@@ -129,7 +145,7 @@ $post-list-title      : #e0e0e0;
 
     .content
     {
-        text-align : justify;        
+        text-align : justify;
     }
 
     .index .articles
@@ -196,8 +212,8 @@ $post-list-title      : #e0e0e0;
     .article .content .share
     {
         text-align : left;
-        
-        
+
+
     }
 
     .article .content .share h3

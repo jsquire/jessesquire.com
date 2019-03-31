@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Reflections on my First Development Job"
-date:   2019-03-09 13:34:26 -0500
+title: "Reflections on my First Development Job"
+date: 2019-03-09 13:34:26 -0500
 category: articles
 tags:
   - work

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Configure GitHub Activity Signing with Windows Subsystem for Linux (WSL)"
 date: 2019-03-31 14:02:18 -0500
@@ -100,7 +100,7 @@ default-key << YOUR KEY ID >>
 ```
 {:.with-paragraph}
 
-The next step is to configure the GPG Agent to cache your password and instruct it how we would like to be prompted for password entry.  The GPG Agent allows for the time of the cache to be specified, so that you're able to make the choice that is right for you.  In the example, caching is set to 400 days (34560000 seconds) so that it can be entered once and then is not needed again until the computer or WSL session are restarted.  In `~/.gnupg/gpg.conf`{:.no-color}, the cache times and an executable for password prompting are registered.  The GPU configuration should contain the following, though you may need to change the location of your pin entry program to the output of the command `which pinentry-curses`, depending on your operating system:
+The next step is to configure the GPG Agent to cache your password and instruct it how we would like to be prompted for password entry.  The GPG Agent allows for the time of the cache to be specified, so that you're able to make the choice that is right for you.  In the example, caching is set to 400 days (34560000 seconds) so that it can be entered once and then is not needed again until the computer or WSL session are restarted.  In `~/.gnupg/gpg-agent.conf`{:.no-color}, the cache times and an executable for password prompting are registered.  The GPU configuration should contain the following, though you may need to change the location of your pin entry program to the output of the command `which pinentry-curses`, depending on your operating system:
 
 ```text
 default-cache-ttl 34560000

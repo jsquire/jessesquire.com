@@ -51,6 +51,7 @@ _site/
 ## VS Code IDE ##
 #################
 
+/.ionide
 **/.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

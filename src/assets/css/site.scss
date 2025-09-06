@@ -1,0 +1,312 @@
+---
+---
+
+/* Basic Hamburger Menu Styles (replacing hamburgers gem) */
+
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #000;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+/* Variable Declarations */
+
+$image-shadow         : #212121;
+$image-border         : #2D2D29;
+$hamburger            : #dedede;
+$code-base            : #e0e0e0;
+$code-base-background : #181818;
+$content-border       : #3CA2A2;
+$post-list-title      : #e0e0e0;
+
+/* General Styles */
+
+.post
+{
+    li
+    {
+        margin-bottom: 0.75em;
+    }
+}
+
+.img-circle
+{
+    border       : solid 1px $image-border;
+    box-shadow   : 4px 2px 10px $image-shadow;
+    border-radius: 50%;
+}
+
+.sitemenu-footer
+{
+    width      : 100%;
+    text-align : center;
+    font-size  : 8px;
+}
+
+.tiny-text
+{
+    font-size: 0.65em;
+}
+
+.no-wrap
+{
+    white-space: nowrap;
+}
+
+ol.single > li,
+ul.single > li
+{
+    margin-bottom: 0.01em;
+}
+
+/* Hamburger Menu Toggle (replacing deprecated hamburgers gem) */
+
+.hamburger,
+.hamburger:active,
+.hamburger:visited,
+.hamburger:focus
+{
+    top     : 5px;
+    left    : 0px;
+    border  : none;
+    padding : 10px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after
+{
+    color            : $hamburger;
+    background-color : $hamburger;
+}
+
+/* Code Formatting */
+
+.single .article .content div.highlighter-rouge pre,
+.single .article .content figure.highlight pre,
+.highlight pre
+{
+  color            : $code-base;
+  background-color : $code-base-background;
+}
+
+/* About Page */
+
+.about
+{
+    margin-bottom : 6px;
+
+    p
+    {
+        margin-bottom: 20px;
+    }
+
+    .top-border
+    {
+        background  : $content-border;
+        border      : 0;
+        margin-top  : -20px;
+        margin-left : 45px;
+        height      : 5px;
+        width       : 100%;
+    }
+
+    .gravatar
+    {
+        text-align : left;
+    }
+
+    .content
+    {
+        text-align : justify;
+    }
+
+    @media (max-width: 991px)
+    {
+        .top-border
+        {
+            width: 97%;
+        }
+    }
+
+    @media (max-width: 534px)
+    {
+        .gravatar
+        {
+            margin-top: -45px;
+        }
+    }
+}
+
+/* General Page */
+
+.site-page
+{
+    margin-bottom : 6px;
+    font-size     : 14px;
+
+    h2
+    {
+        margin-top    : 20px;
+        margin-bottom : 20px;
+    }
+
+    .content
+    {
+        text-align : justify;
+    }
+
+    .index .articles
+    {
+        font-size : 14pt;
+    }
+
+    .index .articles ul
+    {
+        list-style-type : disc;
+        padding-left    : 5%;
+    }
+
+    .index .articles ul li
+    {
+        font-size : inherit;
+        margin    : inherit;
+    }
+
+    .index .articles ul li:last-of-type
+    {
+        margin-bottom : 1.1em;
+    }
+
+    .index .articles h2
+    {
+        margin-top    : 20px;
+        margin-bottom : 20px;
+    }
+}
+
+/* Post Listing Pages */
+
+.post-list
+{
+    .index .articles h2
+    {
+        color           : $post-list-title;
+        text-decoration : underline;
+    }
+}
+
+/* Search Page */
+
+.search-results
+{
+    .result-meta
+    {
+        font-size : 0.5em;
+        font-style: italic;
+        margin    : 0 0 0 5px;
+    }
+}
+
+/* Post Pages */
+
+.post
+{
+    .article .content
+    {
+        font-size : 14pt;
+    }
+
+    .article .content .share
+    {
+        text-align : left;
+
+
+    }
+
+    .article .content .share h3
+    {
+          font-size : 14pt;
+    }
+
+    .a2a_dd
+    {
+        margin-left : 10px;
+    }
+
+    .comment-policy-prompt
+    {
+        margin-top : 20px;
+        font-size  : 10pt;
+        font-style : italic;
+
+        p
+        {
+            margin-bottom : unset;
+        }
+    }
+}

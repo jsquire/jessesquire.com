@@ -15,12 +15,12 @@ permalink: /posts/by-categories.html
         grouped by
       
         <div class="dropdown btn-group">
-          <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-toggle="dropdown">Categories
+          <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-bs-toggle="dropdown">Categories
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/posts/">Years</a></li>
-            <li><a href="{{ site.baseurl }}/posts/by-tags.html">Tags</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/posts.html">Years</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/posts/by-tags.html">Tags</a></li>
           </ul>
         </div>
       </small>
@@ -28,7 +28,7 @@ permalink: /posts/by-categories.html
 
     {% for category in site.categories %}
       <div class="col-md-12 content-panel articles">
-        <h2 id="{{ category | first }}-ref"><i class="fa-solid fa-folder"></i> {{ category | first }}</h2>
+        <h2 id="{{ category | first }}-ref"><i class="fa-solid fa-layer-group"></i> {{ category | first }}</h2>
         <ul>
           {% for posts in category %}
             {% for post in posts %}

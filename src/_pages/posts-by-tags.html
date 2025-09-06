@@ -28,7 +28,7 @@ permalink: /posts/by-tags.html
 
     {% for tag in site.tags %}
       <div class="col-md-12 content-panel articles">
-        <h2 id="{{ tag | first }}-ref"><i class="fa fa-tag"></i> {{ tag | first }}</h2>
+        <h2 id="{{ tag | first }}-ref"><i class="fa-solid fa-tag"></i> {{ tag | first }}</h2>
         <ul>
           {% for posts in tag %}
             {% for post in posts %}

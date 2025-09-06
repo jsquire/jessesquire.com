@@ -23,7 +23,7 @@ description: The technical blog and personal site of Jesse Squire.
 baseurl: ""
 url: "https://www.jessesquire.com"
 title_description: >-
-    <p>Jesse is a software engineer on the Azure Developer Platform team at Microsoft. He used to work on Halo at 343 Industries.</p>
+    <p>Jesse is a Principal Software Engineering Manager on the Azure Developer Experience team at Microsoft. He used to work on Halo at 343 Industries.</p>
     <p>This is the place where Jesse shares his thoughts on technology, code, software engineering and, occasionally, a personal thought or two.</p>
     <p>All views expressed are his own &ndash; especially those regarding the divinity of Hello Kitty.</p>
 title_image: https://0.gravatar.com/avatar/fbe5310c4d5a64a88aeeb83676b28a81?s=500&d=mm
@@ -36,7 +36,7 @@ google_analytics: UA-112031291-1
 disqus_account: jesse-squire
 
 # Social usernames/URLs
-twitter_username: jesse_squire
+bluesky_username: omg.squire.wtf
 github_username: jsquire
 instagram_username:
 reddit_username:
@@ -48,20 +48,20 @@ facebook_link:
 
 # Footer
 footer_left: "Carte Noire theme by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa-brands fa-github\"></i>"
 
 # SEO Settings (specific to jekyll-seo-tag)
 # It also makes use of the following site-settings: title, description, url,
 author: Jesse Squire
 author:
-  twitter: jesse_squire
+  bluesky: omg.squire.wtf
 logo: https://0.gravatar.com/avatar/fbe5310c4d5a64a88aeeb83676b28a81?s=500&d=mm
-twitter:
-  username: jesse_squire
+bluesky:
+  username: omg.squire.wtf
 social:
   name: Jesse Squire
   links:
-    - https://twitter.com/Jesse_Squire
+    - https://bsky.app/profile/omg.squire.wtf
     - https://www.linkedin.com/in/jessesquire
     - https://github.com/jsquire
     - https://stackoverflow.com/users/159548/jesse-squire?tab=profile

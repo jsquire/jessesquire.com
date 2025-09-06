@@ -1,6 +1,6 @@
 /* Colors */
 
-$twitter       : #6dabda;
+$bluesky       : #00bcd4;
 $linkedin      : #2b77b1;
 $xing          : #006567;
 $google-plus   : #c95644;
@@ -34,6 +34,26 @@ $screen-lg-min: 1200px;
 
 $sidebar-width: 230px;
 $sidebar-resident-min: 1100px;
+
+/* Custom Bluesky Icon */
+.bluesky-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('https://img.icons8.com/?size=100&id=3ovMFy5JDSWq&format=png&color=FFFFFF');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+    -webkit-transition: filter .3s;
+    -moz-transition: filter .3s;
+    transition: filter .3s;
+}
+
+.bluesky-icon:hover {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(45%) saturate(1712%) hue-rotate(160deg) brightness(93%) contrast(102%);
+}
 
 /* Globals */
 
@@ -213,7 +233,7 @@ ul
 
     .fa-twitter:hover
     {
-        color: $twitter;
+        color: $bluesky;
     }
 
     .fa-linkedin:hover
@@ -236,6 +256,7 @@ ul
         color: $facebook;
     }
 
+    .fa-github:hover,
     .fa-github-alt:hover
     {
         color: $github;
@@ -251,6 +272,7 @@ ul
         color: $instagram;
     }
 
+    .fa-reddit:hover,
     .fa-reddit-alien:hover
     {
         color: $reddit;

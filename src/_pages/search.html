@@ -19,9 +19,7 @@ permalink: /search.html
 
 <hr class="search-hr" />
 
-{% javascript_asset_tag search %}
-- /_assets/scripts/jekyll-search.js
-{% endjavascript_asset_tag %}
+<script src="{{ '/assets/js/jekyll-search.js' | relative_url }}"></script>
 
 <script>
   var formatResult = function(property, value, template) {      

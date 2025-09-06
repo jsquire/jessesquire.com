@@ -31,7 +31,9 @@ github_repository: https://github.com/jsquire/jessesquire.com
 post_limit: 10
 
 # External Resource Settings
-display_sharing: true
+display_sharing: false
+# TODO: Migrate to GA4 - Universal Analytics (UA-) was deprecated July 2023
+# Get new GA4 measurement ID from Google Analytics (starts with G-)
 google_analytics: UA-112031291-1
 disqus_account: jesse-squire
 
@@ -47,8 +49,8 @@ xing_link:
 facebook_link:
 
 # Footer
-footer_left: "Carte Noire theme by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa-brands fa-github\"></i>"
+footer_left: ""
+footer_right: ""
 
 # SEO Settings (specific to jekyll-seo-tag)
 # It also makes use of the following site-settings: title, description, url,
@@ -84,18 +86,19 @@ kramdown:
       line_numbers: false
       start_line: 1
 
-asset_pipeline:
-  bundle: true
-  compress: true
-  output_path: assets
-  gzip: true
+# Modern Sass configuration (replaces deprecated asset pipeline)
+sass:
+  sass_dir: assets/css
+  style: compressed
+  load_paths:
+    - _sass
+    - node_modules
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
-  - hamburgers
 
 include:
   - _pages

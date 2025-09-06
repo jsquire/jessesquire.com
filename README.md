@@ -30,4 +30,4 @@ I also ask, for both the code and content, that you not copy an item verbatim an
   _Jekyll is a Ruby-based static website generator that is used to build the site from the assets in this repository._
 
 * **[Carte Noir Theme](https://github.com/jacobtomlinson/carte-noire "Carte Noir GitHub Repository")**  
-  _The theme used for the site is a modified version of Carte Noir, created by Jacob Tomlinson.
+  _The theme used for the site is a modified version of Carte Noir, created by Jacob Tomlinson._

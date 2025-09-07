@@ -104,7 +104,7 @@ $post-list-title      : #e0e0e0;
 {
     width      : 100%;
     text-align : center;
-    font-size  : 8px;
+    font-size  : 12px;
 }
 
 .tiny-text
@@ -159,11 +159,6 @@ ul.single > li
 .about
 {
     margin-bottom : 6px;
-
-    p
-    {
-        margin-bottom: 20px;
-    }
 
     .top-border
     {
@@ -309,4 +304,16 @@ ul.single > li
             margin-bottom : unset;
         }
     }
+}
+
+/* Privacy Pages */
+
+#privacy-topics
+{
+    font-size: 14px;
+}
+
+#privacy-topics > li
+{
+    padding-bottom: 6px;
 }

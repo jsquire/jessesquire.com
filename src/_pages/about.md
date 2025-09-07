@@ -6,7 +6,6 @@ title: About Jesse
 permalink: /about/
 ---
 <div class="container-fluid {{ page.contentIdentifier }}" markdown="block">
-  <hr class="top-border" />
   <div class="gravatar">
     <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
   </div>

@@ -116,6 +116,207 @@ article h1, article h2, article h3, article h4, article h5, article h6
     text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
+/* Resume page specific styling */
+.site-page {
+    /* Reduce base font size for the entire resume */
+    font-size: 14px;
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #cccccc !important;
+        text-shadow: none !important;
+        font-weight: 300;
+    }
+    
+    h1 {
+        font-size: 42px; /* Reduced from 48px */
+        margin-bottom: 8px;
+        color: #5a8db3 !important; /* Darker muted blue for name */
+    }
+    
+    h2 {
+        font-size: 22px; /* Reduced from 24px */
+        margin-top: 32px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 8px;
+        color: #5a8db3 !important; /* Darker muted blue for sections */
+    }
+    
+    h3 {
+        font-size: 18px; /* Reduced from 22px */
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    
+    h4 {
+        font-size: 15px; /* Reduced from 18px */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    h5 {
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+    
+    h6 {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+    
+    /* Fix top contact bar - new structure with proper alignment */
+    .contact-bar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 8px 0; /* Reduced from 16px */
+        border-bottom: none; /* Remove the underline */
+        font-size: 14px;
+        gap: 12px;
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+        }
+        
+        .contact-separator {
+            color: #999;
+        }
+    }
+    
+    /* Download link styling */
+    .download-link {
+        padding: 8px 0;
+        font-size: 14px;
+        
+        i {
+            color: #5a8db3;
+            margin-right: 6px;
+        }
+        
+        a {
+            color: #64b5f6;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    /* Reduce spacing after job title */
+    h1 + p {
+        margin-bottom: 8px; /* Reduce space after "Principal Software Engineering Manager" */
+    }
+    
+    /* Remove old p[align="left"] styling */
+    p[align="left"] {
+        text-align: left;
+        margin: 0;
+        padding: 16px 0;
+        border-bottom: 1px solid #444;
+        font-size: 14px;
+    }
+
+    /* Resume content styling */
+    ul {
+        margin-left: 8px;
+        margin-bottom: 4px; /* Spacing between different lists */
+        
+        li {
+            margin-bottom: 2px; /* Reduced from 4px to 2px for tighter spacing */
+            line-height: 1.4; /* Slightly tighter line height */
+            font-size: 14px;
+        }
+    }
+
+    p {
+        line-height: 1.5; /* Reduced from 1.6 */
+        font-size: 14px;
+    }
+
+    li > p {
+        margin-bottom: 4px;
+    }
+    
+    strong {
+        color: #ffffff;
+        font-size: inherit; /* Inherit the smaller font size */
+    }
+
+    /* Fix abnormally large font sizes in specific sections */
+    /* Target all strong elements in lists */
+    ul li strong, 
+    ul li strong * {
+        font-size: 14px !important;
+    }
+    
+    /* Target nested lists and their content */
+    ul ul li,
+    ul ul li strong,
+    ul ul li em {
+        font-size: 14px !important;
+    }
+    
+    /* Override base list styles that are interfering with spacing */
+    .site-page ul li,
+    .site-page ol li {
+        font-size: 14px !important;
+        margin-bottom: 3px !important; /* 3px spacing for all list items */
+        padding: 0 !important; /* Remove any inherited padding */
+    }
+    
+    /* Override mmenu styles that might interfere */
+    .site-page ul li > a,
+    .site-page ul li > span,
+    .site-page ol li > a,
+    .site-page ol li > span {
+        padding: 0 !important; /* Remove mmenu padding */
+        margin: 0 !important;
+    }
+    
+    .site-page ul li *,
+    .site-page ol li * {
+        font-size: 14px !important;
+    }
+    
+    /* Nested list items */
+    .site-page ul ul li {
+        margin-bottom: 0 !important; /* Same spacing for nested items */
+    }
+
+    /* Projects section gets extra spacing for visual separation */
+    #projects ~ p:nth-child(odd) {
+       padding-bottom: 12px;
+    }
+
+    #projects ~ p:nth-child(even) {
+       padding-bottom: 6px;
+       margin-bottom: 6px;
+    }
+
+    /* Awards and Recognition content */
+    #awards-and-recognition ~ p {
+        padding-bottom: 0 !important;
+        margin-bottom: 6px;
+    }
+
+    h2 ~ ul li {
+        font-size: 14px !important;
+        margin-left: auto !important;
+    }
+}
+
 p, li
 {
     color: rgba(255, 255, 255, 0.87);
@@ -520,7 +721,6 @@ ul
 
         ul
         {
-
             padding: 0;
 
             li
@@ -693,7 +893,7 @@ ul
         margin-bottom: 10px;
         @media (min-width: $screen-sm-min)
         {
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }
     }
 

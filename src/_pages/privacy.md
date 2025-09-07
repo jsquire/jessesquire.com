@@ -7,9 +7,11 @@ permalink: /privacy.html
 ---
 This privacy notice discloses the privacy practices for {{ site.url }} and applies solely to information collected by this website. It will notify you of the following:
 
-* What information is collected through the site, how it is used, and with whom it may be shared.
-* What choices are available to you regarding the use of your data.
-* How to stay informed of changes to the privacy policy going forward.
+<ul id="privacy-topics">
+    <li>What information is collected through the site, how it is used, and with whom it may be shared.</li>
+    <li>What choices are available to you regarding the use of your data.</li>
+    <li>How to stay informed of changes to the privacy policy going forward.</li>
+</ul>
 
 Information Collection, Use, and Sharing
 ------

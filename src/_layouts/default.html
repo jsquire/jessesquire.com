@@ -3,7 +3,7 @@
     {% include head.html %}
     <body>
     {% include side-menu.html %}
-    <div class="page-content {{ page.contentIdentifier }}">
+    <div class="page-content {{ page.contentIdentifier | join: ' ' }}">
       <div class="wrap">
       {{ content }}
       </div>

@@ -15,6 +15,7 @@ $reddit        : #cee3f8;
 $rss           : #eea33a;
 
 /* Main color scheme - Modern dark theme */
+
 $darker        : #1a1a1a;     /* Deep charcoal for darkest elements */
 $dark          : #2a2a2a;     /* Dark charcoal for main background */
 $medium        : #3a3a3a;     /* Mid-grey for content panels */
@@ -24,14 +25,11 @@ $light-blue    : #64b5f6;     /* Light blue for accents and hover states */
 $green         : #81c784;     /* Modern green for success states */
 $light         : #f5f5f5;     /* Very light grey for contrast */
 $white         : #ffffff;     /* Pure white for text */
-$dark-purple   : #300030;
-$medium-purple : #480048;
-$regular-purple: #601848;
 $red           : #ef5350;     /* Modern red for errors */
-$orange        : #ff9800;     /* Modern orange for warnings */
 
 /* Responsive sizes */
 
+$screen-xs-min: 576px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
@@ -40,7 +38,9 @@ $sidebar-width: 230px;
 $sidebar-resident-min: 1100px;
 
 /* Custom Bluesky Icon */
-.bluesky-icon {
+
+.bluesky-icon
+{
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -56,7 +56,8 @@ $sidebar-resident-min: 1100px;
     transition: filter .3s;
 }
 
-.bluesky-icon:hover {
+.bluesky-icon:hover
+{
     filter: brightness(0) saturate(100%) invert(56%) sepia(45%) saturate(1712%) hue-rotate(160deg) brightness(93%) contrast(102%);
 }
 
@@ -70,12 +71,17 @@ html
 
 body
 {
+    margin          : 0;
     font-family     : 'Open Sans', sans-serif;
     font-weight     : 300;
     background-color: $dark;
     color           : rgba(255, 255, 255, 0.92);
-    font-size       : 16px;
+    font-size       : 20px;
     line-height     : 1.6;
+    @media (min-width: $screen-sm-min)
+    {
+        font-size: 18px;
+    }
     height          : 100%;
     width           : 100%;
     -webkit-font-smoothing: antialiased;
@@ -87,235 +93,37 @@ h1, h2, h3, h4, h5, h6
 {
     color: #2d5a7b;
     font-weight: 400;
+    font-size: 2rem;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* Article content headers should be lighter for better readability */
-.post-content h1, .post-content h2, .post-content h3, 
+.post-content h1, .post-content h2, .post-content h3,
 .post-content h4, .post-content h5, .post-content h6,
-article h1, article h2, article h3, article h4, article h5, article h6
+article h1, article h2, article h3, article h4, article h5, article h6,
+.article h1.header
 {
     color: #64b5f6;
 }
 
-/* Specific targeting for article page headers */
+/* Specific targeting for article page headers with shadow */
 .article h1.header {
-    color: #64b5f6 !important;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* Page layout headers (like About page) */
+/* Page layout headers  */
 .index h2.header {
-    color: #64b5f6 !important;
+    color: #64b5f6;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* Content within articles should have lighter headers */
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-    color: #64b5f6 !important;
+    color: #64b5f6;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* Resume page specific styling */
-.site-page {
-    /* Reduce base font size for the entire resume */
-    font-size: 14px;
-    
-    h1, h2, h3, h4, h5, h6 {
-        color: #cccccc !important;
-        text-shadow: none !important;
-        font-weight: 300;
-    }
-    
-    h1 {
-        font-size: 42px; /* Reduced from 48px */
-        margin-bottom: 8px;
-        color: #5a8db3 !important; /* Darker muted blue for name */
-    }
-    
-    h2 {
-        font-size: 22px; /* Reduced from 24px */
-        margin-top: 32px;
-        margin-bottom: 16px;
-        border-bottom: 1px solid #444;
-        padding-bottom: 8px;
-        color: #5a8db3 !important; /* Darker muted blue for sections */
-    }
-    
-    h3 {
-        font-size: 18px; /* Reduced from 22px */
-        margin-top: 24px;
-        margin-bottom: 12px;
-    }
-    
-    h4 {
-        font-size: 15px; /* Reduced from 18px */
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    
-    h5 {
-        font-size: 14px;
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-    
-    h6 {
-        font-size: 13px;
-        margin-top: 12px;
-        margin-bottom: 6px;
-    }
-    
-    /* Fix top contact bar - new structure with proper alignment */
-    .contact-bar {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 8px 0; /* Reduced from 16px */
-        border-bottom: none; /* Remove the underline */
-        font-size: 14px;
-        gap: 12px;
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            
-            img {
-                width: 20px;
-                height: 20px;
-                object-fit: contain;
-            }
-        }
-        
-        .contact-separator {
-            color: #999;
-        }
-    }
-    
-    /* Download link styling */
-    .download-link {
-        padding: 8px 0;
-        font-size: 14px;
-        
-        i {
-            color: #5a8db3;
-            margin-right: 6px;
-        }
-        
-        a {
-            color: #64b5f6;
-            text-decoration: none;
-            
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-    
-    /* Reduce spacing after job title */
-    h1 + p {
-        margin-bottom: 8px; /* Reduce space after "Principal Software Engineering Manager" */
-    }
-    
-    /* Remove old p[align="left"] styling */
-    p[align="left"] {
-        text-align: left;
-        margin: 0;
-        padding: 16px 0;
-        border-bottom: 1px solid #444;
-        font-size: 14px;
-    }
 
-    /* Resume content styling */
-    ul {
-        margin-left: 8px;
-        margin-bottom: 4px; /* Spacing between different lists */
-        
-        li {
-            margin-bottom: 2px; /* Reduced from 4px to 2px for tighter spacing */
-            line-height: 1.4; /* Slightly tighter line height */
-            font-size: 14px;
-        }
-    }
-
-    p {
-        line-height: 1.5; /* Reduced from 1.6 */
-        font-size: 14px;
-    }
-
-    li > p {
-        margin-bottom: 4px;
-    }
-    
-    strong {
-        color: #ffffff;
-        font-size: inherit; /* Inherit the smaller font size */
-    }
-
-    /* Fix abnormally large font sizes in specific sections */
-    /* Target all strong elements in lists */
-    ul li strong, 
-    ul li strong * {
-        font-size: 14px !important;
-    }
-    
-    /* Target nested lists and their content */
-    ul ul li,
-    ul ul li strong,
-    ul ul li em {
-        font-size: 14px !important;
-    }
-    
-    /* Override base list styles that are interfering with spacing */
-    .site-page ul li,
-    .site-page ol li {
-        font-size: 14px !important;
-        margin-bottom: 3px !important; /* 3px spacing for all list items */
-        padding: 0 !important; /* Remove any inherited padding */
-    }
-    
-    /* Override mmenu styles that might interfere */
-    .site-page ul li > a,
-    .site-page ul li > span,
-    .site-page ol li > a,
-    .site-page ol li > span {
-        padding: 0 !important; /* Remove mmenu padding */
-        margin: 0 !important;
-    }
-    
-    .site-page ul li *,
-    .site-page ol li * {
-        font-size: 14px !important;
-    }
-    
-    /* Nested list items */
-    .site-page ul ul li {
-        margin-bottom: 0 !important; /* Same spacing for nested items */
-    }
-
-    /* Projects section gets extra spacing for visual separation */
-    #projects ~ p:nth-child(odd) {
-       padding-bottom: 12px;
-    }
-
-    #projects ~ p:nth-child(even) {
-       padding-bottom: 6px;
-       margin-bottom: 6px;
-    }
-
-    /* Awards and Recognition content */
-    #awards-and-recognition ~ p {
-        padding-bottom: 0 !important;
-        margin-bottom: 6px;
-    }
-
-    h2 ~ ul li {
-        font-size: 14px !important;
-        margin-left: auto !important;
-    }
-}
 
 p, li
 {
@@ -335,15 +143,6 @@ a:link
 a:hover
 {
     color          : #7dc4f8;
-    text-decoration: underline;
-    text-shadow    : 0 0 8px rgba(100, 181, 246, 0.4);
-}
-
-/* Fix article list hover colors */
-.index .articles a:hover,
-.content-panel a:hover
-{
-    color          : #7dc4f8 !important;
     text-decoration: underline;
     text-shadow    : 0 0 8px rgba(100, 181, 246, 0.4);
 }
@@ -398,10 +197,10 @@ ul
     margin-left : -0%;
     width       : 100%;
     letter-spacing: -0.5px;
-    
+
     @media (min-width: $screen-sm-min)
     {
-        font-size   : 58px;
+        font-size   : 45px;
         margin-left : -10%;
         width       : 120%;
         letter-spacing: -1px;
@@ -424,7 +223,7 @@ ul
     transition      : all 0.2s ease-in-out;
     box-shadow      : 0 2px 8px rgba(0, 0, 0, 0.2);
     z-index         : 100;
-    
+
     @media (min-width: $screen-sm-min)
     {
         top : 20px;
@@ -473,7 +272,7 @@ ul
 .content-panel h5,
 .content-panel h6
 {
-    color: #3a6b8c;
+    color: #8daac5;
 }
 
 #siteMenu
@@ -511,7 +310,7 @@ ul
 
     a:hover
     {
-        color: $light-blue !important;
+        color: $light-blue;
         background-color: rgba(100, 181, 246, 0.08);
         text-shadow: 0 0 6px rgba(100, 181, 246, 0.3);
     }
@@ -524,16 +323,16 @@ ul
             width: 16px;
             text-align: center;
         }
-        
+
         a,
         a:active
         {
             padding-left: 44px;
         }
-        
+
         a:hover
         {
-            color: $light-blue !important;
+            color: $light-blue;
         }
     }
 }
@@ -631,8 +430,8 @@ ul
     padding   : 0;
     @media (min-width: $screen-sm-min)
     {
-        width    : 700px;
-        max-width: 700px;
+        width    : 900px;
+        max-width: 900px;
     }
 
     .header
@@ -709,7 +508,7 @@ ul
     .articles
     {
         text-align: center;
-        font-size : 20px;
+        font-size : 16px;
 
         h2
         {
@@ -725,13 +524,8 @@ ul
 
             li
             {
-                margin-bottom: 20px;
-                font-size    : 24px;
-
-                a:hover
-                {
-                    color: $light-medium;
-                }
+                margin-bottom: 5px;
+                font-size    : 16px;
 
                 small
                 {
@@ -809,6 +603,7 @@ ul
 {
     margin-left : 0;
     margin-right: 0;
+
     @media (min-width: $screen-sm-min)
     {
         #search-container
@@ -817,6 +612,7 @@ ul
             padding-bottom: 150px;
         }
     }
+
     @media (min-width: $screen-md-min)
     {
         margin-left : -15px;
@@ -1011,12 +807,12 @@ ul
 
         .content
         {
-            font-size  : 18px;
+            font-size  : 20px;
             line-height: 170%;
             padding    : 10px 15px;
             @media (min-width: $screen-sm-min)
             {
-                font-size: 24px;
+                font-size: 18px;
                 padding  : 40px 30px 20px;
             }
 
@@ -1421,6 +1217,11 @@ td
     margin-left : 0;
 }
 
+#siteMenu .slide-menu-item
+{
+    margin-left: 55px;
+}
+
 @media all and (min-width: $sidebar-resident-min)
 {
     html,
@@ -1453,6 +1254,7 @@ td
     }
 
     /* Prevent mmenu shadow on desktop */
+
     html.mm-opened .mm-page
     {
         box-shadow: none !important;
@@ -1481,11 +1283,12 @@ td
     }
 
     /* Override mmenu panel padding for better desktop layout */
+
     .mm-menu > .mm-panel
     {
         padding: 20px 0 0 0;
-        
-        @media (max-width: 1200px)
+
+        @media (max-width: $screen-lg-min)
         {
             padding: 20px 3px 0 3px;
         }
@@ -1539,5 +1342,19 @@ td
         -ms-transition     : none 0.0s step-end;
         -o-transition      : none 0.0s step-end;
         transition         : none 0.0s step-end;
+    }
+
+    /* Override mmenu library borders for the left nav */
+
+    .mm-menu .mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults):after
+    {
+        content: none;
+        display: none;
+    }
+
+    .mm-menu .mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults)
+    {
+        border-bottom: none;
+        border-top: none;
     }
 }

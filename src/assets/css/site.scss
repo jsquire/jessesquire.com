@@ -3,7 +3,8 @@
 
 /* Basic Hamburger Menu Styles (replacing hamburgers gem) */
 
-.hamburger {
+.hamburger
+{
     padding: 15px 15px;
     display: inline-block;
     cursor: pointer;
@@ -19,28 +20,33 @@
     overflow: visible;
 }
 
-.hamburger:hover {
+.hamburger:hover
+{
     opacity: 0.7;
 }
 
-.hamburger.is-active:hover {
+.hamburger.is-active:hover
+{
     opacity: 0.7;
 }
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
+.hamburger.is-active .hamburger-inner::after
+{
     background-color: #000;
 }
 
-.hamburger-box {
+.hamburger-box
+{
     width: 40px;
     height: 24px;
     display: inline-block;
     position: relative;
 }
 
-.hamburger-inner {
+.hamburger-inner
+{
     display: block;
     top: 50%;
     margin-top: -2px;
@@ -48,7 +54,8 @@
 
 .hamburger-inner,
 .hamburger-inner::before,
-.hamburger-inner::after {
+.hamburger-inner::after
+{
     width: 40px;
     height: 4px;
     background-color: #000;
@@ -60,16 +67,19 @@
 }
 
 .hamburger-inner::before,
-.hamburger-inner::after {
+.hamburger-inner::after
+{
     content: "";
     display: block;
 }
 
-.hamburger-inner::before {
+.hamburger-inner::before
+{
     top: -10px;
 }
 
-.hamburger-inner::after {
+.hamburger-inner::after
+{
     bottom: -10px;
 }
 
@@ -154,6 +164,87 @@ ul.single > li
   background-color : $code-base-background;
 }
 
+/* Shared Content Pages (Resume, Privacy, Community) */
+
+.content-page .content
+{
+    text-align  : justify;
+    font-size   : 16px;
+    line-height : 1.4;
+
+    h1, h2, h3, h4, h5, h6
+    {
+        color : #64b5f6;
+        text-shadow : none;
+    }
+
+    h2
+    {
+        font-size     : 22px;
+        margin-top    : 20px;
+        margin-bottom : 20px;
+        border-bottom : 1px solid #3a3a3a;
+        padding-bottom: 0.25em;
+    }
+
+    h3
+    {
+        font-size     : 18px;
+        margin-top    : 1.2em;
+        margin-bottom : 0.5em;
+    }
+
+    p
+    {
+        margin-bottom : 0.5em;
+        font-size     : 16px;
+        line-height   : 1.4;
+    }
+
+    ul, ol
+    {
+        list-style-type : disc;
+        margin-bottom   : 1em;
+        padding-left    : 5%;
+    }
+
+    li
+    {
+        font-size     : inherit;
+        margin        : 0;
+        margin-bottom : 0.05em;
+        line-height   : 1.4;
+    }
+
+        strong
+        {
+            color : #ffffff;
+        }
+
+        a
+        {
+            color           : #64b5f6;
+            text-decoration : none;
+
+            &:hover
+            {
+                text-decoration : underline;
+            }
+        }
+
+    .download-link
+    {
+        margin-top    : 15px;
+        margin-bottom : 25px;
+
+        .fa-solid
+        {
+            color        : #64b5f6;
+            margin-right : 8px;
+        }
+    }
+}
+
 /* About Page */
 
 .about
@@ -195,52 +286,14 @@ ul.single > li
             margin-top: -45px;
         }
     }
-}
 
-/* General Page */
-
-.site-page
-{
-    margin-bottom : 6px;
-    font-size     : 14px;
-
-    h2
+    p
     {
-        margin-top    : 20px;
-        margin-bottom : 20px;
-    }
-
-    .content
-    {
-        text-align : justify;
-    }
-
-    .index .articles
-    {
-        font-size : 14pt;
-    }
-
-    .index .articles ul
-    {
-        list-style-type : disc;
-        padding-left    : 5%;
-    }
-
-    .index .articles ul li
-    {
-        font-size : inherit;
-        margin    : inherit;
-    }
-
-    .index .articles ul li:last-of-type
-    {
-        margin-bottom : 1.1em;
-    }
-
-    .index .articles h2
-    {
-        margin-top    : 20px;
-        margin-bottom : 20px;
+        font-size : 20px;
+        @media (min-width: 576px)
+        {
+            font-size: 18px;
+        }
     }
 }
 
@@ -267,25 +320,40 @@ ul.single > li
     }
 }
 
-/* Post Pages */
+/* Article List Pages - Use consistent sizing */
+
+.index .articles,
+.index .articles ul li
+{
+    font-size : 20px;
+    @media (min-width: 576px)
+    {
+        font-size: 18px;
+    }
+}
+
+/* Post Pages - Align with body font size */
 
 .post
 {
-    .article .content
+    .article .content,
+    .article .content a
     {
-        font-size : 14pt;
+        font-size : 20px;
+        @media (min-width: 576px)
+        {
+            font-size: 18px;
+        }
     }
 
     .article .content .share
     {
         text-align : left;
-
-
     }
 
     .article .content .share h3
     {
-          font-size : 14pt;
+        font-size : 18px;
     }
 
     .a2a_dd
@@ -296,17 +364,95 @@ ul.single > li
     .comment-policy-prompt
     {
         margin-top : 20px;
-        font-size  : 10pt;
+        font-size  : 12px;
         font-style : italic;
 
         p
         {
-            margin-bottom : unset;
+            margin-bottom : 0;
         }
     }
 }
 
-/* Privacy Pages */
+/* Privacy and Community Pages - Align with content-page sizing */
+
+.community-page,
+.privacy-page
+{
+    .index .articles,
+    .index .articles ul li
+    {
+        font-size: 16px;
+    }
+}
+
+/* Resume Page */
+
+.resume-page
+{
+    .content h2
+    {
+        border-bottom : 1px solid #444;
+    }
+
+    .content h3
+    {
+        color: #8daac5;
+    }
+
+    .index .articles,
+    .index .articles ul li,
+    .content p
+    {
+        font-size : 18px;
+        @media (min-width: 576px)
+        {
+            font-size: 16px;
+        }
+    }
+
+    #skills ~ ul:nth-of-type(3) > li
+    {
+        strong
+        {
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+        ul > li
+        {
+            margin-bottom: 0;
+        }
+    }
+
+    #projects ~ p > strong
+    {
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    #projects + p > strong
+    {
+        margin: 0;
+    }
+
+    /* Reset the margin for items */
+    #awards-and-recognition ~ p > strong
+    {
+        margin-top: 0;
+    }
+
+    .contact-bar
+    {
+        font-size : 16px;
+        @media (min-width: 576px)
+        {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Privacy Page */
 
 #privacy-topics
 {

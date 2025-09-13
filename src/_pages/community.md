@@ -1,7 +1,7 @@
 ---
 layout: page
 make-smaller-titles: true
-contentIdentifier: site-page
+contentIdentifier: [content-page, community-page]
 title: Community Guidelines
 permalink: /community.html
 ---

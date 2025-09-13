@@ -1,7 +1,7 @@
 ---
 layout: page
 make-smaller-titles: true
-contentIdentifier: site-page
+contentIdentifier: [content-page, resume-page]
 title:
 permalink: /resume/
 ---
@@ -189,4 +189,5 @@ Software engineering, architecture, and leadership roles across small to mid-siz
 
 ## Education
 
-**Stockton University** — B.S. Computer Science
+**Stockton University**  
+_B.S. Computer Science_
